@@ -55,7 +55,7 @@ Status Code **{{=response.status}}**
 {{?}}
 
 {{? enums.length > 0 }}
-#### Enumerated Values
+### Permitted Values
 
 |Property|Value|
 |---|---|
