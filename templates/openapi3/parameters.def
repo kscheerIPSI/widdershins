@@ -3,7 +3,7 @@
 
 |Name|Type|Required|Description|
 |---|---|---|---|
-{{~ data.parameters :p}}|{{=p.name}}|{{=p.safeType}}|{{=p.required}}|{{=p.shortDesc || 'none'}}|
+{{~ data.parameters :p}}|{{=p.name}}|{{=p.safeType}}{{? p.maxLength }}[{{=p.maxLength}}]{{?}}|{{=p.required}}|{{=p.shortDesc || 'none'}}|
 {{~}}
 
 {{? data.longDescs }}
