@@ -49,7 +49,7 @@ Status Code **{{=response.status}}**
 {{?}}
 |Name|Type|Required|Description|
 |---|---|---|---|
-{{~block.rows :p}}|{{=p.displayName}}|{{=p.safeType}}|{{=p.required}}|{{=p.description||'none'}}|
+{{~block.rows :p}}|{{=p.displayName}}{{? p.maxLength }}[{{=p.maxLength}}]{{?}}|{{=p.safeType}}|{{=p.required}}|{{=p.description||'none'}}|
 {{~}}
 {{~}}
 {{?}}
